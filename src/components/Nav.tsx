@@ -4,7 +4,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 
 const Nav = () => {
   return (
-    <nav className=" h-full  md:flex md:flex-col-reverse     bg-navBg xs:py-2 md:py-4 ">
+    <nav className=" h-full flex xs:flex-col  md:flex-col-reverse     bg-navBg xs:py-2 md:py-4 ">
       <div className="mb-auto   flex xs:flex-col md:flex-row text-center xs:gap-y-6 md:gap-x-6  justify-center align-items  xs:text-24 md:text-20 xl:text-24 ">
         <Link
           href="#"
