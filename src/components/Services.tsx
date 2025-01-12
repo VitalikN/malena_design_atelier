@@ -12,27 +12,29 @@ const Services = () => {
           Наші послуги:
         </h2>
         <ul className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
-          <li className="p-2 ">
+          <li className="p-2  ">
             <ImScissors className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>
+            <p className="text-center">
               Індивідуальний пошив — створення суконь та іншого одягу під ваше
               замовлення з урахуванням побажань і стилю.
             </p>
           </li>
           <li>
             <LiaCheckCircle className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>
+            <p className="text-center">
               Контроль якості — ретельна перевірка кожної деталі для ідеального
               результату.
             </p>
           </li>
           <li>
             <TbIroningSteam className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>Відпарювання — професійна підготовка суконь до важливого дня.</p>
+            <p className="text-center">
+              Відпарювання — професійна підготовка суконь до важливого дня.
+            </p>
           </li>
           <li>
             <FaRegUser className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>
+            <p className="text-center">
               Консультація стиліста салону — допомога у виборі фасону та стилю,
               що підкреслить вашу унікальність.
             </p>
@@ -41,18 +43,20 @@ const Services = () => {
         <ul className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
           <li>
             <BiCloset className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>
+            <p className="text-center">
               Зберігання сукні до весілля — безпечне зберігання вашого вбрання у
               нашому салоні.
             </p>
           </li>
           <li>
             <GiSewingMachine className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p> Ательє — професійний пошив та корекція готових суконь.</p>
+            <p className="text-center">
+              Ательє — професійний пошив та корекція готових суконь.
+            </p>
           </li>
           <li>
             <GiSewingNeedle className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
-            <p>
+            <p className="text-center">
               Пошив усіх видів одягу на замовлення — від елегантних суконь до
               повсякденних речей.
             </p>

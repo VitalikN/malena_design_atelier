@@ -1,6 +1,8 @@
 "use client";
-import Image from "next/image";
 
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+import Image from "next/image";
 import imageData from "../../galleryData.json";
 
 const Collections = () => {
@@ -10,22 +12,26 @@ const Collections = () => {
         <h2 className="p-2 text-center xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text">
           Collections
         </h2>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-screen-md mx-auto">
-          {imageData.map((image) => (
-            <li
-              key={image.id}
-              className="gallery-item overflow-hidden cursor-pointer"
-            >
-              <Image
-                src={image.url}
-                alt={image.alt}
-                width={1200}
-                height={1200}
-                className="object-contain mx-auto w-full transform transition-transform ease-in-out duration-500 hover:scale-125"
-              />
-            </li>
-          ))}
-        </ul>
+        <PhotoProvider>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-screen-md mx-auto">
+            {imageData.map((image) => (
+              <li
+                key={image.id}
+                className="gallery-item overflow-hidden cursor-pointer"
+              >
+                <PhotoView src={image.url}>
+                  <Image
+                    src={image.url}
+                    alt={image.alt}
+                    width={1200}
+                    height={1200}
+                    className="object-contain mx-auto w-full transform transition-transform ease-in-out duration-500 hover:scale-125"
+                  />
+                </PhotoView>
+              </li>
+            ))}
+          </ul>
+        </PhotoProvider>
       </div>
     </section>
   );
