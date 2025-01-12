@@ -4,9 +4,9 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
 const Header = () => {
   return (
-    <header className="bg-mainBg shadow-md  w-full xs:pt-2 md:pt-4 lg:pt-6">
+    <header className="bg-mainBg shadow-md  w-full xs:pt-4  lg:pt-6">
       <div>
-        <div className="container mx-auto xs:py-2 xs:px-2   md:px-6 lg:px-8 md:pb-2 lg:pb-2 ">
+        <div className="container mx-auto   xs:pb-4 lg:pb-6 ">
           <Link href="/" className=" ">
             <Image
               src="/Logo.png"
@@ -17,8 +17,8 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="      bg-navBg xs:py-2 md:py-3 ">
-          <div className="flex gap-x-4 justify-center align-items xs:pb-3 ">
+        <nav className="      bg-navBg xs:py-2 md:py-4 ">
+          <div className="flex xs:gap-x-4 md:gap-x-6 justify-center align-items pb-4 ">
             <Link
               href="https://www.facebook.com/profile.php?id=61570230000079"
               className="p-2 self-center transition ease-in-out hover:scale-125 duration-300 
@@ -46,7 +46,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="flex xs:gap-x-1 md:gap-x-4 justify-center align-items  xs:text-18 md:text-20 xl:text-24 ">
+          <div className="flex xs:gap-x-2 md:gap-x-6  justify-center align-items  xs:text-18 md:text-20 xl:text-24 ">
             <Link
               href="#"
               className="p-2 transition ease-in-out hover:scale-125 duration-300 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text  "

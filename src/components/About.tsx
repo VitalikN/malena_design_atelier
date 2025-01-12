@@ -2,7 +2,9 @@ const About = () => {
   return (
     <section className=" bg-mainBg">
       <div className="container mx-auto xs:py-4 xs:px-4   md:px-6 xl:px-8 md:py-6 xl:py-8 ">
-        <h2 className="text-center md:pb-4 xl:pb-8">Про нас</h2>
+        <h2 className="p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
+          Про нас
+        </h2>
         <div className="md:flex md:gap-4">
           {/* Блок для зображення */}
           <div className="flex-1   ">

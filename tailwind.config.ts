@@ -12,6 +12,7 @@ export default {
       md: "768px",
       xl: "1280px",
     },
+
     extend: {
       colors: {
         background: "var(--background)",
@@ -20,7 +21,8 @@ export default {
         foreground: "var(--foreground)",
         mainBg: "#fdfcfa",
         navBg: "#f8f3f0",
-        colorText: "#876924",
+        colorText: "#3f3936",
+        //"#876924"
 
         gradientFrom: "#886924",
         gradientVia: "#c59f4a",
@@ -37,8 +39,8 @@ export default {
         "18": ["18px", "24px"],
         "20": ["20px", "24px"],
         "24": ["24px", "28px"],
-        "23": ["23px", "32"],
-        "28": ["28px", "39px"],
+        "23": ["23px", "32px"],
+        "26": ["26px", "28px"],
         "30": ["30px", "48px"],
         "32": ["32px", "80px"],
         "34": ["34px", "48px"],
