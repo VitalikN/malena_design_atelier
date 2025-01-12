@@ -23,11 +23,9 @@ const About = () => {
               найважливіші моменти вашого життя.
             </p>
             <button
-              className=" bg-backgroundButton px-3 py-1  
-            
-            rounded-xl hover:bg-buttonHover transition duration-300 hover:text-white
-            
-            "
+              className=" bg-backgroundButton px-3 py-1  mx-auto 
+            border border-borderColor
+             hover:bg-buttonHover transition duration-300 hover:text-white hover:border-none "
             >
               звязатись
             </button>

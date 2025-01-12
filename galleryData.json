@@ -3,26 +3,32 @@
   { "id": 2, "url": "/img/2.jpg", "alt": "Фото 2" },
   { "id": 3, "url": "/img/3.jpg", "alt": "Фото 3" },
   { "id": 4, "url": "/img/4.jpg", "alt": "Фото 4" },
-  { "id": 5, "url": "/img/5.jpg", "alt": "Фото 5" },
-  { "id": 6, "url": "/img/6.jpg", "alt": "Фото 6" },
+
   { "id": 7, "url": "/img/7.jpg", "alt": "Фото 7" },
   { "id": 8, "url": "/img/8.jpg", "alt": "Фото 8" },
   { "id": 9, "url": "/img/9.jpg", "alt": "Фото 9" },
   { "id": 10, "url": "/img/10.jpg", "alt": "Фото 10" },
   { "id": 11, "url": "/img/11.jpg", "alt": "Фото 11" },
   { "id": 12, "url": "/img/12.jpg", "alt": "Фото 12" },
-  { "id": 13, "url": "/img/13.jpg", "alt": "Фото 13" },
-  { "id": 14, "url": "/img/14.jpg", "alt": "Фото 14" },
+
   { "id": 15, "url": "/img/15.jpg", "alt": "Фото 15" },
   { "id": 16, "url": "/img/16.jpg", "alt": "Фото 16" },
-  { "id": 17, "url": "/img/17.jpg", "alt": "Фото 17" },
-  { "id": 18, "url": "/img/18.jpg", "alt": "Фото 18" },
+
   { "id": 19, "url": "/img/19.jpg", "alt": "Фото 19" },
   { "id": 20, "url": "/img/20.jpg", "alt": "Фото 20" },
   { "id": 21, "url": "/img/21.jpg", "alt": "Фото 21" },
   { "id": 22, "url": "/img/22.jpg", "alt": "Фото 22" },
+
+  { "id": 5, "url": "/img/5.jpg", "alt": "Фото 5" },
+  { "id": 6, "url": "/img/6.jpg", "alt": "Фото 6" },
+
+  { "id": 17, "url": "/img/17.jpg", "alt": "Фото 17" },
+  { "id": 18, "url": "/img/18.jpg", "alt": "Фото 18" },
+  { "id": 13, "url": "/img/13.jpg", "alt": "Фото 13" },
+  { "id": 14, "url": "/img/14.jpg", "alt": "Фото 14" },
   { "id": 23, "url": "/img/23.jpg", "alt": "Фото 23" },
   { "id": 24, "url": "/img/24.jpg", "alt": "Фото 24" },
+
   { "id": 25, "url": "/img/25.jpg", "alt": "Фото 25" },
   { "id": 26, "url": "/img/26.jpg", "alt": "Фото 26" },
 

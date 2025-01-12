@@ -9,6 +9,7 @@ export default {
   theme: {
     screens: {
       xs: "375px",
+      sm: "680px",
       md: "768px",
       xl: "1280px",
     },
@@ -23,7 +24,7 @@ export default {
         navBg: "#f8f3f0",
         colorText: "#3f3936",
         //"#876924"
-
+        borderColor: "#c59f4a",
         gradientFrom: "#886924",
         gradientVia: "#c59f4a",
         gradientTo: "#a27c2f",
