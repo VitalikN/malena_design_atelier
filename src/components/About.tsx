@@ -2,23 +2,29 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="About" className=" bg-mainBg">
+    <section id="About" className=" bg-navBg ">
       <div className="xl:container mx-auto xs:py-4 xs:px-4   md:px-6 xl:px-8 md:py-6 xl:py-8 ">
-        <h2 className="p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
+        <h2 className=" md:hidden p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
           Про нас
-        </h2>
-        <div className="md:flex md:gap-4">
-          {/* Блок для зображення */}
-          <div className="flex-1   ">
+        </h2>{" "}
+        <div
+          className="
+        grid grid-cols-1 md:grid-cols-2   gap-4  mx-auto 
+        "
+        >
+          <div className="flex-1 flex items-stretch">
             <Image
               src="/about.jpg"
               alt="about"
               width={1000}
               height={1000}
-              className="  h-auto object-contain mx-auto w-full "
+              className="w-full h-full object-cover mx-auto"
             />
           </div>
-          <div className="flex-1 bg-navBg p-4 ">
+          <div className="flex-1 bg-navBg p-4  items-stretch">
+            <h2 className=" max-md:hidden  p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
+              Про нас
+            </h2>
             <p>
               У Malena Design Atelier ви знайдете готові весільні та вечірні
               сукні, а також можливість замовити індивідуальний пошив,
