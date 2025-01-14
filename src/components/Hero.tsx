@@ -42,11 +42,11 @@ const Hero = () => {
         style={{ height: dynamicHeight }}
       >
         <div className="container mx-auto h-full flex  xs:py-2 xs:px-2 md:px-6 xl:px-8 md:pb-2 xl:pb-2 text-center">
-          <div className=" ">
-            <h1 className="text-white text-3xl md:text-5xl font-bold">
+          <div className="  flex flex-col items-center justify-center xs:mr-[50px] md:mr-0">
+            <h1 className="text-white xs:text-26 md:text-30 lg:text-40 font-bold pb-[20px]  xs:max-w-[350px] lg:max-w-[400px] ">
               Мистецтво бути неперевершеною
             </h1>
-            <h2 className=" text-white text-3xl md:text-4xl font-normal ">
+            <h2 className=" text-white xs:text-22 md:text-26 lg:text-34  font-normal xs:max-w-[350px] lg:max-w-[400px] ">
               Тільки ви — ідеальний крій, бездоганний стиль
             </h2>
           </div>

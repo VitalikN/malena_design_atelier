@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -21,11 +22,15 @@ const About = () => {
               className="w-full h-full object-cover mx-auto"
             />
           </div>
-          <div className="flex-1 bg-navBg p-4  items-stretch">
+          <div
+            className="
+          flex flex-col 
+          flex-1 bg-navBg p-4  items-stretch"
+          >
             <h2 className=" max-md:hidden  p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
               Про нас
             </h2>
-            <p>
+            <p className="mb-[30px] text-justify">
               У Malena Design Atelier ви знайдете готові весільні та вечірні
               сукні, а також можливість замовити індивідуальний пошив,
               враховуючи всі ваші побажання. Наш великий досвід дозволяє нам
@@ -36,13 +41,13 @@ const About = () => {
               почувалися впевнено, неперевершено та були в центрі уваги у
               найважливіші моменти вашого життя.
             </p>
-            <button
-              type="button"
-              className=" bg-backgroundButton 
-              mx-auto  px-6 py-2  text-gray-800  font-semibold  rounded-lg  border border-borderColor  hover:bg-buttonHover  hover:text-white  hover:border-transparent   outline:none   shadow-md hover:shadow-lg   focus:outline-none   focus:ring-offset-2     focus:ring-buttonHover   transition-all   duration-300"
+            <Link
+              href="#Contact"
+              className=" bg-backgroundButton mt-auto 
+              mx-auto  px-6 py-2    font-semibold  rounded-lg  border border-borderColor  hover:bg-buttonHover  hover:text-white  hover:border-transparent   outline:none   shadow-md hover:shadow-lg   focus:outline-none   focus:ring-offset-2     focus:ring-buttonHover   transition-all   duration-300"
             >
               звязатись
-            </button>
+            </Link>
           </div>
         </div>
       </div>
