@@ -10,13 +10,13 @@ const Collections = () => {
     <section>
       <div
         id="Collections"
-        className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
+        className=" xl:container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
       >
         <h2 className="p-2 text-center xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text">
           Collections
         </h2>
         <PhotoProvider>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:max-w-screen-md mx-auto">
+          <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-4  mx-auto">
             {imageData.map((image) => (
               <li
                 key={image.id}
