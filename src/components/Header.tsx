@@ -8,7 +8,14 @@ import { Sling as Hamburger } from "hamburger-react";
 import Nav from "./Nav";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleMenuToggle = (state: boolean) => {
+    setIsOpen(state);
+    if (state) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -28,13 +35,17 @@ const Header = () => {
           <Image
             src="/Logo.png"
             alt="Malena Design Atelier"
-            width={120}
-            height={120}
-            className="object-contain md:mx-auto xs:w-32  md:w-40 cursor-pointer"
+            width={400}
+            height={400}
+            className="object-contain md:mx-auto xs:w-32 md:w-40 xl:w-48 cursor-pointer"
           />
         </Link>
         <div className="md:hidden  text-gradientTo">
-          <Hamburger toggled={isOpen} toggle={setIsOpen} size={24} />
+          <Hamburger
+            toggled={isOpen}
+            toggle={() => handleMenuToggle(!isOpen)}
+            size={24}
+          />
         </div>
       </div>
       <div
@@ -42,10 +53,10 @@ const Header = () => {
           isOpen ? "transform translate-x-0" : "transform -translate-x-full"
         } md:hidden`}
       >
-        <Nav />
+        <Nav closeMenu={() => setIsOpen(false)} />
       </div>
       <div className="hidden md:block">
-        <Nav />
+        <Nav closeMenu={() => {}} />
       </div>
     </header>
   );

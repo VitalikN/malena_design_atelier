@@ -16,14 +16,11 @@ export default {
 
     extend: {
       colors: {
-        background: "var(--background)",
         backgroundButton: "#f8f3f0",
         buttonHover: "#d4b5a0",
-        foreground: "var(--foreground)",
         mainBg: "#fdfcfa",
         navBg: "#f8f3f0",
         colorText: "#3f3936",
-        //"#876924"
         borderColor: "#c59f4a",
         gradientFrom: "#886924",
         gradientVia: "#c59f4a",

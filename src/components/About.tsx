@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className=" bg-mainBg">
+    <section id="About" className=" bg-mainBg">
       <div className="container mx-auto xs:py-4 xs:px-4   md:px-6 xl:px-8 md:py-6 xl:py-8 ">
         <h2 className="p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
           Про нас
@@ -23,9 +23,9 @@ const About = () => {
               найважливіші моменти вашого життя.
             </p>
             <button
-              className=" bg-backgroundButton px-3 py-1  mx-auto 
-            border border-borderColor
-             hover:bg-buttonHover transition duration-300 hover:text-white hover:border-none "
+              type="button"
+              className=" bg-backgroundButton 
+              mx-auto  px-6 py-2  text-gray-800  font-semibold  rounded-lg  border border-borderColor  hover:bg-buttonHover  hover:text-white  hover:border-transparent   outline:none   shadow-md hover:shadow-lg   focus:outline-none   focus:ring-offset-2     focus:ring-buttonHover   transition-all   duration-300"
             >
               звязатись
             </button>

@@ -6,7 +6,7 @@ import { BiCloset } from "react-icons/bi";
 import { LiaCheckCircle } from "react-icons/lia";
 const Services = () => {
   return (
-    <section className=" bg-navBg  md:py-6 xl:py-8">
+    <section id="Services" className=" bg-navBg  md:py-6 xl:py-8">
       <div className="container mx-auto xs:py-2 xs:px-2   md:px-6 lg:px-8 md:pb-2 lg:pb-2 ">
         <h2 className="p-2 text-center xs:text-26 md:text-30  text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
           Наші послуги:
