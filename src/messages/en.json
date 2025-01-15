@@ -33,5 +33,22 @@
     "address": "Dlouha 17, Cheb, Czech Republic",
     "phone1": "+420 731 863 400",
     "phone2": "+380 505 402 238"
+  },
+  "ContactForm": {
+    "heading": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "submit": "Submit",
+    "nameRequired": "Name is required",
+    "nameMinLength": "Name must be at least 3 characters long",
+    "nameMaxLength": "Name cannot exceed 50 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Invalid phone number format"
+  },
+  "CustomNotification": {
+    "successMessage": "The request has been successfully sent! We will contact you soon 😊"
   }
 }

@@ -30,7 +30,7 @@ const About = async () => {
             </h2>
             <p className="mb-[30px] text-justify">{t('description')}</p>
             <Link
-              href="#Contact"
+              href="#ContactForm"
               className=" bg-backgroundButton mt-auto 
               mx-auto  px-6 py-2    font-semibold  rounded-lg  border border-borderColor  hover:bg-buttonHover  hover:text-white  hover:border-transparent   outline:none   shadow-md hover:shadow-lg   focus:outline-none   focus:ring-offset-2     focus:ring-buttonHover   transition-all   duration-300"
             >

@@ -47,7 +47,7 @@ const LocaleSwitcher = () => {
             En
           </span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => onLocaleChange('ua')}>
+        <DropdownMenuItem onClick={() => onLocaleChange('uk')}>
           <span
             className="mr-2 text-gradientTo cursor-pointer"
             role="img"

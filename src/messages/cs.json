@@ -33,5 +33,22 @@
     "address": "Dlouha 17, Cheb, Česká republika",
     "phone1": "+420 731 863 400",
     "phone2": "+380 505 402 238"
+  },
+  "ContactForm": {
+    "heading": "Kontaktujte nás",
+    "name": "Jméno",
+    "email": "Email",
+    "phone": "Telefonní číslo",
+    "submit": "Odeslat",
+    "nameRequired": "Jméno je povinné",
+    "nameMinLength": "Jméno musí mít alespoň 3 znaky",
+    "nameMaxLength": "Jméno nemůže přesáhnout 50 znaků",
+    "emailRequired": "Email je povinný",
+    "emailInvalid": "Neplatný formát emailu",
+    "phoneRequired": "Telefonní číslo je povinné",
+    "phoneInvalid": "Neplatný formát telefonního čísla"
+  },
+  "CustomNotification": {
+    "successMessage": "Žádost byla úspěšně odeslána! Brzy se s vámi spojíme 😊"
   }
 }
