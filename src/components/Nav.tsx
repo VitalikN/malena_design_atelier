@@ -1,15 +1,15 @@
-'use client';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import Networks from './Networks';
-import LocaleSwitcher from './navbar/LocaleSwitcher';
+"use client";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import Networks from "./Networks";
+import LocaleSwitcher from "./navbar/LocaleSwitcher";
 
 type NavProps = {
   closeMenu: () => void;
 };
 
 const Nav: React.FC<NavProps> = ({ closeMenu }) => {
-  const t = useTranslations('Navigation');
+  const t = useTranslations("Navigation");
 
   const handleLinkClick = () => {
     closeMenu();
@@ -20,30 +20,30 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
         <Link
           href="#About"
           onClick={handleLinkClick}
-          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text  "
+          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
         >
-          {t('About')}
+          {t("About")}
         </Link>
         <Link
           href="#Collections"
           onClick={handleLinkClick}
-          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text"
+          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
         >
-          {t('Collections')}
+          {t("Collections")}
         </Link>
         <Link
           href="#Services"
           onClick={handleLinkClick}
-          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text"
+          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
         >
-          {t('Services')}
+          {t("Services")}
         </Link>
         <Link
           href="#Contact"
           onClick={handleLinkClick}
-          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text "
+          className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
         >
-          {t('Contact')}
+          {t("Contact")}
         </Link>
         <LocaleSwitcher />
       </div>

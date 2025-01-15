@@ -31,7 +31,10 @@ const Header = () => {
   return (
     <header className="bg-mainBg shadow-md  w-full xs:pt-4  lg:pt-6">
       <div className=" mx-auto flex xs:flex-row md:flex-col items-center xs:justify-between md:justify-start xs:px-4 xs:pb-4 lg:pb-6">
-        <Link href="/" className="  ">
+        <Link
+          href="/"
+          className=" focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
+        >
           <Image
             src="/Logo.png"
             alt="Malena Design Atelier"

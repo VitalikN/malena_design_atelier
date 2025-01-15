@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
-import Image from 'next/image';
-import imageData from '../../galleryData.json';
-import { useEffect, useState } from 'react';
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+import Image from "next/image";
+import imageData from "../../galleryData.json";
+import { useEffect, useState } from "react";
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   PaginationEllipsis,
-} from '@/components/ui/pagination';
-import { useTranslations } from 'next-intl';
+} from "@/components/ui/pagination";
+import { useTranslations } from "next-intl";
 
 const Collections = () => {
   const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
   const [scrollToTop, setScrollToTop] = useState(false);
-  const t = useTranslations('Collection');
+  const t = useTranslations("Collection");
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentImages = imageData.slice(startIndex, startIndex + itemsPerPage);
@@ -32,9 +32,9 @@ const Collections = () => {
 
   useEffect(() => {
     if (scrollToTop) {
-      const collectionsSection = document.getElementById('Collections');
+      const collectionsSection = document.getElementById("Collections");
       if (collectionsSection) {
-        collectionsSection.scrollIntoView({ behavior: 'smooth' });
+        collectionsSection.scrollIntoView({ behavior: "smooth" });
       }
       setScrollToTop(false);
     }
@@ -47,9 +47,11 @@ const Collections = () => {
         className=" xl:container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
       >
         <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text">
-          {t('collectionsTitle')}
+          {t("collectionsTitle")}
         </h2>
-        <PhotoProvider>
+        <PhotoProvider
+          overlayRender={() => <div className="fixed inset-0 bg-navBg "></div>}
+        >
           <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-4  mx-auto">
             {currentImages.map((image) => (
               <li
@@ -78,9 +80,10 @@ const Collections = () => {
                 onClick={() => handlePageClick(1)}
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${
                   currentPage === 1
-                    ? 'bg-gradient-to-r from-gradientFrom to-gradientTo text-white'
-                    : 'bg-navBg text-gradientFrom'
-                } transition hover:scale-110`}
+                    ? "bg-buttonHover text-white"
+                    : "bg-navBg text-gradientFrom"
+                }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
+          outline:none duration-400`}
               >
                 1
               </PaginationLink>
@@ -99,9 +102,10 @@ const Collections = () => {
                     onClick={() => handlePageClick(page)}
                     className={`w-10 h-10 rounded-full flex items-center justify-center ${
                       page === currentPage
-                        ? 'bg-gradient-to-r from-gradientFrom to-gradientTo text-white'
-                        : 'bg-navBg text-gradientFrom'
-                    } transition hover:scale-110`}
+                        ? "bg-buttonHover text-white"
+                        : "bg-navBg text-gradientFrom"
+                    }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
+          outline:none duration-400`}
                   >
                     {page}
                   </PaginationLink>
@@ -118,9 +122,10 @@ const Collections = () => {
                   onClick={() => handlePageClick(totalPages)}
                   className={`w-10 h-10 rounded-full flex items-center justify-center ${
                     currentPage === totalPages
-                      ? 'bg-gradient-to-r from-gradientFrom to-gradientTo text-white'
-                      : 'bg-navBg text-gradientFrom'
-                  } transition hover:scale-110`}
+                      ? "bg-buttonHover text-white"
+                      : "bg-navBg text-gradientFrom"
+                  }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
+          outline:none duration-400`}
                 >
                   {totalPages}
                 </PaginationLink>
