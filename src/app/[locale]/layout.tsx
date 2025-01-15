@@ -33,7 +33,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   return (
-    <html lang={locale || 'en'} suppressHydrationWarning={true}>
+    <html lang={locale} suppressHydrationWarning={true}>
       <body
         className={`${geistSans.variable} ${mulish.className} antialiased bg-mainBg text-colorText`}
       >
