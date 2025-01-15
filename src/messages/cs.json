@@ -1,0 +1,37 @@
+{
+  "Navigation": {
+    "About": "O nás",
+    "Collections": "Kolekce",
+    "Services": "Služby",
+    "Contact": "Kontakt"
+  },
+  "Hero": {
+    "title": "Umění být nepřekonatelná",
+    "subtitle": "Jen vy — dokonalý střih, bezchybný styl"
+  },
+  "About": {
+    "title": "O nás",
+    "description": "V Malena Design Atelier najdete hotové svatební a večerní šaty, stejně jako možnost objednat zakázkový střih, zohledňující všechny vaše požadavky. Naše bohaté zkušenosti nám umožňují hluboce porozumět potřebám každé nevěsty. Během komunikace nejen vytváříme šaty, ale také do nich vkládáme kousek naší duše, abychom vaši oslavu učinili pravým symbolem lásky, štěstí a krásy. Každý model je vytvořen s láskou naším návrhářem, abyste se cítili sebevědomě, výjimečně a byli středem pozornosti v těch nejdůležitějších okamžicích vašeho života.",
+    "contactLink": "Kontaktujte nás"
+  },
+  "Collection": {
+    "collectionsTitle": "Kolekce"
+  },
+  "Services": {
+    "servicesTitle": "Naše služby",
+    "customTailoring": "Individuální šití: vytváříme šaty podle vašeho návrhu a přání.",
+    "qualityControl": "Kontrola kvality: každý detail je zkontrolován pro dokonalý vzhled.",
+    "steaming": "Parní úprava: profesionální příprava šatů pro důležité události.",
+    "stylistConsultation": "Konzultace s stylistou: výběr střihu, který odráží vaši individualitu.",
+    "weddingStorage": "Skladování do svatby: bezpečné uložení vašeho vzhledu v našem salonu.",
+    "dressAlterations": "Úpravy hotových šatů: profesionální úprava pro ideální padnutí.",
+    "everydayClothing": "Šití každodenního oblečení: stylové věci pro jakékoli příležitosti.",
+    "eveningDressRental": "Půjčovna večerních šatů: široký výběr elegantních šatů pro speciální okamžiky."
+  },
+  "Contacts": {
+    "contactTitle": "Kontakty",
+    "address": "Dlouha 17, Cheb, Česká republika",
+    "phone1": "+420 731 863 400",
+    "phone2": "+380 505 402 238"
+  }
+}

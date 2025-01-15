@@ -1,0 +1,37 @@
+{
+  "Navigation": {
+    "About": "About",
+    "Collections": "Collections",
+    "Services": "Services",
+    "Contact": "Contact"
+  },
+  "Hero": {
+    "title": "The Art of Being Unmatched",
+    "subtitle": "Only you — the perfect fit, impeccable style"
+  },
+  "About": {
+    "title": "About Us",
+    "description": "At Malena Design Atelier, you will find ready-made wedding and evening dresses, as well as the opportunity to order custom tailoring, taking into account all your wishes. Our extensive experience allows us to deeply understand the needs of each bride. During communication, we not only create a dress but also put a part of our soul into it to make your celebration a true symbol of love, happiness, and beauty. Each model is created with love by our designer so that you feel confident, exceptional, and at the center of attention during the most important moments of your life.",
+    "contactLink": "Contact Us"
+  },
+  "Collection": {
+    "collectionsTitle": "Collections"
+  },
+  "Services": {
+    "servicesTitle": "Our Services",
+    "customTailoring": "Custom Tailoring: We create dresses according to your design and wishes.",
+    "qualityControl": "Quality Control: Every detail is checked for perfect appearance.",
+    "steaming": "Steaming: Professional preparation of dresses for important events.",
+    "stylistConsultation": "Stylist Consultation: Choosing a style that reflects your individuality.",
+    "weddingStorage": "Wedding Storage: Safe storage of your look in our salon.",
+    "dressAlterations": "Dress Alterations: Professional fitting for a perfect fit.",
+    "everydayClothing": "Everyday Clothing: Stylish clothes for any occasion.",
+    "eveningDressRental": "Evening Dress Rental: A wide selection of elegant dresses for special moments."
+  },
+  "Contacts": {
+    "contactTitle": "Contacts",
+    "address": "Dlouha 17, Cheb, Czech Republic",
+    "phone1": "+420 731 863 400",
+    "phone2": "+380 505 402 238"
+  }
+}
