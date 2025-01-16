@@ -1,6 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const [dynamicHeight, setDynamicHeight] = useState('80vh');
@@ -44,12 +45,24 @@ const Hero = () => {
       >
         <div className="container mx-auto h-full flex  xs:py-2 xs:px-2 md:px-6 xl:px-8 md:pb-2 xl:pb-2 text-center">
           <div className="  flex flex-col items-center justify-center xs:mr-[50px] md:mr-0">
-            <h1 className="text-white xs:text-26 md:text-30 lg:text-40 font-bold pb-[20px]  xs:max-w-[350px] lg:max-w-[400px] ">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="text-white xs:text-26 md:text-30 lg:text-40 font-bold pb-[20px]  xs:max-w-[350px] lg:max-w-[400px] "
+            >
               {t('title')}
-            </h1>
-            <h2 className=" text-white xs:text-22 md:text-26 lg:text-34  font-normal xs:max-w-[350px] lg:max-w-[400px] ">
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className=" text-white xs:text-22 md:text-26 lg:text-34  font-normal xs:max-w-[350px] lg:max-w-[400px] "
+            >
               {t('subtitle')}
-            </h2>
+            </motion.h2>
           </div>
         </div>
       </div>

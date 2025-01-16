@@ -49,7 +49,7 @@ const LocaleSwitcher = () => {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => onLocaleChange("uk")}>
           <span
-            className=" text-gradientTo cursor-pointer  px-2 py-1.5    w-full   hover:text-white "
+            className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"
             aria-label="Ukrainian Flag"
           >
@@ -58,7 +58,7 @@ const LocaleSwitcher = () => {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => onLocaleChange("ru")}>
           <span
-            className=" text-gradientTo cursor-pointer  px-2 py-1.5    w-full   hover:text-white "
+            className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"
             aria-label="Russian Flag"
           >
@@ -67,7 +67,7 @@ const LocaleSwitcher = () => {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => onLocaleChange("cs")}>
           <span
-            className=" text-gradientTo cursor-pointer  px-2 py-1.5    w-full   hover:text-white "
+            className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"
             aria-label="Cz Flag"
           >

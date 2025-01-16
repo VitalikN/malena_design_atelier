@@ -50,5 +50,48 @@
   },
   "CustomNotification": {
     "successMessage": "The request has been successfully sent! We will contact you soon 😊"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "item1": {
+      "question": "Do you offer custom tailoring for dresses?",
+      "answer": "Yes, we create dresses tailored to your design and preferences."
+    },
+    "item2": {
+      "question": "How is quality control conducted?",
+      "answer": "Each detail is manually checked for a perfect finish."
+    },
+    "item3": {
+      "question": "Is steaming included in the service?",
+      "answer": "Yes, we provide professional steaming before important events."
+    },
+    "item4": {
+      "question": "Can I consult with a stylist?",
+      "answer": "Of course! Our stylist will help you choose a design that highlights your individuality."
+    },
+    "item5": {
+      "question": "Do you offer dress storage until the wedding?",
+      "answer": "Yes, your dress will be safely stored in our salon."
+    },
+    "item6": {
+      "question": "Can I adjust a ready-made dress?",
+      "answer": "Yes, we professionally tailor the dress for a perfect fit."
+    },
+    "item7": {
+      "question": "Do you sew everyday clothing?",
+      "answer": "Yes, we create stylish items for all occasions."
+    },
+    "item8": {
+      "question": "How does evening dress rental work?",
+      "answer": "You can choose from a wide range of elegant dresses for special moments."
+    },
+    "item9": {
+      "question": "How long does custom tailoring take?",
+      "answer": "The average time for custom tailoring is 2-4 weeks, depending on complexity."
+    },
+    "item10": {
+      "question": "Do you offer delivery or pickup?",
+      "answer": "Yes, you can choose delivery or pickup at your convenience."
+    }
   }
 }

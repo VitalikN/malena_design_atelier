@@ -50,5 +50,48 @@
   },
   "CustomNotification": {
     "successMessage": "Žádost byla úspěšně odeslána! Brzy se s vámi spojíme 😊"
+  },
+  "Faq": {
+    "title": "Často kladené otázky",
+    "item1": {
+      "question": "Nabízíte šití šatů na míru?",
+      "answer": "Ano, vytváříme šaty přesně podle vašeho návrhu a preferencí."
+    },
+    "item2": {
+      "question": "Jak probíhá kontrola kvality?",
+      "answer": "Každý detail je ručně zkontrolován pro dokonalý vzhled."
+    },
+    "item3": {
+      "question": "Je napařování zahrnuto ve službě?",
+      "answer": "Ano, poskytujeme profesionální napařování před důležitými událostmi."
+    },
+    "item4": {
+      "question": "Mohu konzultovat stylistu?",
+      "answer": "Samozřejmě! Náš stylista vám pomůže vybrat design, který zdůrazní vaši individualitu."
+    },
+    "item5": {
+      "question": "Nabízíte úschovu šatů do svatby?",
+      "answer": "Ano, vaše šaty budou bezpečně uloženy v našem salonu."
+    },
+    "item6": {
+      "question": "Je možné upravit hotové šaty?",
+      "answer": "Ano, šaty profesionálně upravíme pro dokonalé padnutí."
+    },
+    "item7": {
+      "question": "Šijete i běžné oblečení?",
+      "answer": "Ano, vytváříme stylové kousky pro každou příležitost."
+    },
+    "item8": {
+      "question": "Jak funguje pronájem večerních šatů?",
+      "answer": "Můžete si vybrat z široké nabídky elegantních šatů pro zvláštní okamžiky."
+    },
+    "item9": {
+      "question": "Jak dlouho trvá šití na míru?",
+      "answer": "Průměrná doba šití na míru je 2-4 týdny podle složitosti."
+    },
+    "item10": {
+      "question": "Nabízíte doručení nebo osobní vyzvednutí?",
+      "answer": "Ano, můžete si zvolit doručení nebo osobní vyzvednutí podle vašeho přání."
+    }
   }
 }
