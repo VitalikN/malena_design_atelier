@@ -1,30 +1,36 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import { Sling as Hamburger } from "hamburger-react";
-import Nav from "./Nav";
-import Logo from "./Logo";
-import Networks from "./Networks";
+import { Sling as Hamburger } from 'hamburger-react';
+import Nav from './Nav';
+import Logo from './Logo';
+import Networks from './Networks';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleMenuToggle = (state: boolean) => {
     setIsOpen(state);
-    if (state) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
   };
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      const scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
     } else {
-      document.body.style.overflow = "auto";
+      const scrollY = parseInt(document.body.style.top || '0', 10) * -1;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, scrollY);
     }
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
     };
   }, [isOpen]);
 
@@ -42,7 +48,7 @@ const Header = () => {
       </div>
       <div
         className={`flex flex-col justify-between p-2  fixed top-[90px] left-0 right-0 h-full bg-navBg opacity-90  z-40 transition-transform duration-500 ease-in-out ${
-          isOpen ? "transform translate-x-0" : "transform -translate-x-full"
+          isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
         } md:hidden`}
       >
         <Nav closeMenu={() => setIsOpen(false)} />
