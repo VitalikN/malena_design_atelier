@@ -1,8 +1,8 @@
-'use client';
-import Link from 'next/link';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { RiFacebookCircleLine } from 'react-icons/ri';
-import { motion } from 'framer-motion';
+"use client";
+import Link from "next/link";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { RiFacebookCircleLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const Networks = () => {
   return (
@@ -12,7 +12,7 @@ const Networks = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           delay: 0.2,
-          type: 'spring',
+          type: "spring",
           stiffness: 120,
           damping: 20,
           duration: 0.8,
@@ -20,11 +20,11 @@ const Networks = () => {
       >
         <Link
           href="https://www.facebook.com/profile.php?id=61570230000079"
-          className="p-2 self-center transition ease-in-out hover:scale-115 duration-400 focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <RiFacebookCircleLine className="size-8 text-gradientTo" />
+          <RiFacebookCircleLine className="size-8 text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
         </Link>
       </motion.div>
 
@@ -33,7 +33,7 @@ const Networks = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           delay: 0.4,
-          type: 'spring',
+          type: "spring",
           stiffness: 120,
           damping: 20,
           duration: 0.8,
@@ -41,11 +41,11 @@ const Networks = () => {
       >
         <Link
           href="https://www.instagram.com/malena_design_atelier?igsh=cjJjMGc5amNmM3Zw"
-          className="p-2 self-center transition ease-in-out hover:scale-115 duration-400 focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram className="size-8 text-gradientTo" />
+          <FaInstagram className="size-8 text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
         </Link>
       </motion.div>
 
@@ -54,7 +54,7 @@ const Networks = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           delay: 0.6,
-          type: 'spring',
+          type: "spring",
           stiffness: 120,
           damping: 20,
           duration: 0.8,
@@ -62,9 +62,9 @@ const Networks = () => {
       >
         <Link
           href="tel:+420731863400"
-          className="p-2 self-center transition ease-in-out hover:scale-115 duration-400 focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
         >
-          <FaWhatsapp className="size-8 text-gradientTo" />
+          <FaWhatsapp className="size-8 text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
         </Link>
       </motion.div>
     </div>

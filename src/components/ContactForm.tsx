@@ -1,13 +1,13 @@
-'use client';
-import { Formik, Form, Field, FormikValues, FormikHelpers } from 'formik';
-import * as Yup from 'yup';
-import { useTranslations } from 'next-intl';
-import { useState } from 'react';
-import Notification from './ui/CustomNotification';
-import sendEmail from '@/utils/sendEmail';
-import { ReloadIcon } from '@radix-ui/react-icons';
-import ErrorMessage, { ErrorMessageProps } from './ErrorMessage/ErrorMessage';
-import { motion } from 'framer-motion';
+"use client";
+import { Formik, Form, Field, FormikValues, FormikHelpers } from "formik";
+import * as Yup from "yup";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import Notification from "./ui/CustomNotification";
+import sendEmail from "@/utils/sendEmail";
+import { ReloadIcon } from "@radix-ui/react-icons";
+import ErrorMessage, { ErrorMessageProps } from "./ErrorMessage/ErrorMessage";
+import { motion } from "framer-motion";
 
 export interface FormValues {
   name: string;
@@ -16,31 +16,31 @@ export interface FormValues {
 }
 
 const initialValues = {
-  name: '',
-  email: '',
-  phone: '',
+  name: "",
+  email: "",
+  phone: "",
 };
 
 const ContactForm = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<ErrorMessageProps | null>(null);
-  const t = useTranslations('ContactForm');
+  const t = useTranslations("ContactForm");
 
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(3, t('nameMinLength'))
-      .max(50, t('nameMaxLength'))
-      .required(t('nameRequired')),
-    email: Yup.string().email(t('emailInvalid')).required(t('emailRequired')),
+      .min(3, t("nameMinLength"))
+      .max(50, t("nameMaxLength"))
+      .required(t("nameRequired")),
+    email: Yup.string().email(t("emailInvalid")).required(t("emailRequired")),
     phone: Yup.string()
-      .matches(/^\+?[0-9]{10,15}$/, t('phoneInvalid'))
-      .required(t('phoneRequired')),
+      .matches(/^\+?[0-9]{10,15}$/, t("phoneInvalid"))
+      .required(t("phoneRequired")),
   });
 
   const handleSubmit = async (
     values: FormikValues,
-    { setSubmitting, resetForm }: FormikHelpers<FormValues>,
+    { setSubmitting, resetForm }: FormikHelpers<FormValues>
   ) => {
     try {
       setLoading(true);
@@ -50,7 +50,7 @@ const ContactForm = () => {
       setNotificationVisible(true);
       setError(null);
     } catch (err) {
-      console.error('Error submitting form:', err);
+      console.error("Error submitting form:", err);
       if (err instanceof Error) {
         setError({
           status: 500,
@@ -65,14 +65,14 @@ const ContactForm = () => {
 
   return (
     <section
-      id="ContactForm"
+      id="Contact"
       className="relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/about.jpg)' }}
+      style={{ backgroundImage: "url(/about.jpg)" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="container mx-auto py-12 md:py-16 px-4 relative z-10">
         <h2 className="text-white text-3xl md:text-4xl text-center font-bold mb-6">
-          {t('heading')}
+          {t("heading")}
         </h2>
         {/* Анимированная форма */}
         <motion.div
@@ -93,7 +93,7 @@ const ContactForm = () => {
                     htmlFor="name"
                     className="block text-lg font-semibold text-gradientTo"
                   >
-                    {t('name')}
+                    {t("name")}
                   </label>
                   <Field
                     type="text"
@@ -116,7 +116,7 @@ const ContactForm = () => {
                     htmlFor="email"
                     className="block text-lg font-semibold text-gradientTo"
                   >
-                    {t('email')}
+                    {t("email")}
                   </label>
                   <Field
                     type="email"
@@ -139,7 +139,7 @@ const ContactForm = () => {
                     htmlFor="phone"
                     className="block text-lg font-semibold text-gradientTo"
                   >
-                    {t('phone')}
+                    {t("phone")}
                   </label>
                   <Field
                     type="tel"
@@ -165,7 +165,7 @@ const ContactForm = () => {
                     {loading ? (
                       <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
                     ) : (
-                      t('submit')
+                      t("submit")
                     )}
                   </button>
                 </div>

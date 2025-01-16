@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +12,6 @@ html {
 
 @layer base {
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 0 0% 3.9%;
@@ -66,7 +64,6 @@ html {
   }
 
   .dark {
-
     --background: 0 0% 3.9%;
 
     --foreground: 0 0% 98%;
@@ -124,5 +121,24 @@ html {
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  .PhotoView-Slider__Backdrop {
+    background: rgba(248, 243, 240, 0.9) !important; /* Змінено фон */
+  }
+
+  .PhotoView-Slider__ArrowLeft svg,
+  .PhotoView-Slider__ArrowRight svg {
+    background: #d4b5a0 !important;
+    border-radius: 50% !important;
+  }
+  .PhotoView-Slider__BannerWrap {
+    color: #c59f4a !important;
+    background-color: rgba(212, 181, 160, 0) !important;
+  }
+
+  .PhotoView-Slider__toolbarIcon {
+    fill: #c59f4a !important;
   }
 }

@@ -6,10 +6,7 @@ const Contact = async () => {
   const t = await getTranslations("Contacts");
   return (
     <section className="bg-mainBg py-8 px-4">
-      <div
-        id="Contact"
-        className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2 text-center"
-      >
+      <div className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2 text-center">
         <h2 className="p-2 text-center xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text ">
           {t("contactTitle")}
         </h2>

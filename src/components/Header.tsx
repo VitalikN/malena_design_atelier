@@ -52,7 +52,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-[90px] left-0 right-0 h-full bg-navBg z-40 transition-transform duration-500 ease-in-out ${
+        className={`fixed top-[90px] left-0 right-0 h-full bg-navBg opacity-90  z-40 transition-transform duration-500 ease-in-out ${
           isOpen ? "transform translate-x-0" : "transform -translate-x-full"
         } md:hidden`}
       >
