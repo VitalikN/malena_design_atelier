@@ -44,7 +44,7 @@ const Collections = () => {
     <section className="py-10">
       <div
         id="Collections"
-        className=" xl:container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
+        className=" container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
       >
         <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text">
           {t("collectionsTitle")}
@@ -52,7 +52,7 @@ const Collections = () => {
         <PhotoProvider
           overlayRender={() => <div className="fixed inset-10 "></div>}
         >
-          <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4 gap-4  mx-auto">
+          <ul className="grid grid-cols-1 md:grid-cols-2    xl:grid-cols-4 gap-4  mx-auto">
             {currentImages.map((image, index) => (
               <motion.li
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}

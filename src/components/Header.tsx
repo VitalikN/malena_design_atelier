@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
-import Link from "next/link";
 import { Sling as Hamburger } from "hamburger-react";
 import Nav from "./Nav";
+import Logo from "./Logo";
+import Networks from "./Networks";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,18 +31,7 @@ const Header = () => {
   return (
     <header className="bg-mainBg shadow-md  w-full xs:pt-4  lg:pt-6">
       <div className=" mx-auto flex xs:flex-row md:flex-col items-center xs:justify-between md:justify-start xs:px-4 xs:pb-4 lg:pb-6">
-        <Link
-          href="/"
-          className=" focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
-        >
-          <Image
-            src="/Logo.png"
-            alt="Malena Design Atelier"
-            width={400}
-            height={400}
-            className="object-contain md:mx-auto xs:w-32 md:w-40 xl:w-48 cursor-pointer"
-          />
-        </Link>
+        <Logo />
         <div className="md:hidden  text-gradientTo">
           <Hamburger
             toggled={isOpen}
@@ -52,14 +41,18 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed top-[90px] left-0 right-0 h-full bg-navBg opacity-90  z-40 transition-transform duration-500 ease-in-out ${
+        className={`flex flex-col justify-between p-2  fixed top-[90px] left-0 right-0 h-full bg-navBg opacity-90  z-40 transition-transform duration-500 ease-in-out ${
           isOpen ? "transform translate-x-0" : "transform -translate-x-full"
         } md:hidden`}
       >
         <Nav closeMenu={() => setIsOpen(false)} />
+        <div className="xs:pb-24 md:pb-4 flex xs:flex-col">
+          <Networks />
+        </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:flex h-full gap-2  md:flex-col bg-navBg xs:py-2 md:py-4">
         <Nav closeMenu={() => {}} />
+        <Networks />
       </div>
     </header>
   );

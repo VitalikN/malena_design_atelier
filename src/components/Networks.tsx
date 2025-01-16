@@ -20,7 +20,7 @@ const Networks = () => {
       >
         <Link
           href="https://www.facebook.com/profile.php?id=61570230000079"
-          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,11 +41,11 @@ const Networks = () => {
       >
         <Link
           href="https://www.instagram.com/malena_design_atelier?igsh=cjJjMGc5amNmM3Zw"
-          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram className="size-8 text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
+          <FaInstagram className="size-8  text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
         </Link>
       </motion.div>
 
@@ -62,7 +62,7 @@ const Networks = () => {
       >
         <Link
           href="tel:+420731863400"
-          className="p-2 self-center focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
         >
           <FaWhatsapp className="size-8 text-gradientTo transition ease-in-out hover:scale-115 duration-400 " />
         </Link>

@@ -1,16 +1,15 @@
-'use client';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import Networks from './Networks';
-import LocaleSwitcher from './navbar/LocaleSwitcher';
-import { motion } from 'framer-motion';
+"use client";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import LocaleSwitcher from "./navbar/LocaleSwitcher";
+import { motion } from "framer-motion";
 
 type NavProps = {
   closeMenu: () => void;
 };
 
 const Nav: React.FC<NavProps> = ({ closeMenu }) => {
-  const t = useTranslations('Navigation');
+  const t = useTranslations("Navigation");
 
   const handleLinkClick = () => {
     closeMenu();
@@ -23,7 +22,7 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
       opacity: 1,
       x: 0,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 120,
         damping: 25,
         duration: 0.8,
@@ -37,7 +36,7 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
       opacity: 1,
       x: 0,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 120,
         damping: 25,
         duration: 0.8,
@@ -51,7 +50,7 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 120,
         damping: 25,
         duration: 0.8,
@@ -60,28 +59,28 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
   };
 
   return (
-    <nav className="h-full flex xs:flex-col md:flex-col-reverse bg-navBg xs:py-2 md:py-4">
+    <nav>
       <div className="mb-auto flex xs:flex-col md:flex-row text-center xs:gap-y-6 md:gap-x-6 justify-center items-center xs:text-20 md:text-20 xl:text-24">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={itemVariantsLeft} // Элемент появляется с левой стороны
           whileHover={{ scale: 1.05 }}
-          transition={{ type: 'spring', stiffness: 300 }}
+          transition={{ type: "spring", stiffness: 300 }}
         >
           <Link
             href="#About"
             onClick={handleLinkClick}
             className="nav-link p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
-            {t('About')}
+            {t("About")}
           </Link>
         </motion.div>
         <motion.div
           initial="hidden"
           animate="visible"
           variants={itemVariantsTop} // Элемент появляется сверху
-          transition={{ delay: 0.2, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          transition={{ delay: 0.2, type: "spring", stiffness: 300 }} // Задержка для эффекта
           whileHover={{ scale: 1.05 }}
         >
           <Link
@@ -89,14 +88,14 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
             onClick={handleLinkClick}
             className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
-            {t('Collections')}
+            {t("Collections")}
           </Link>
         </motion.div>
         <motion.div
           initial="hidden"
           animate="visible"
           variants={itemVariants} // Элемент появляется с правой стороны
-          transition={{ delay: 0.4, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          transition={{ delay: 0.4, type: "spring", stiffness: 300 }} // Задержка для эффекта
           whileHover={{ scale: 1.05 }}
         >
           <Link
@@ -104,14 +103,14 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
             onClick={handleLinkClick}
             className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
-            {t('Services')}
+            {t("Services")}
           </Link>
         </motion.div>
         <motion.div
           initial="hidden"
           animate="visible"
           variants={itemVariantsLeft} // Элемент появляется с левой стороны
-          transition={{ delay: 0.6, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          transition={{ delay: 0.6, type: "spring", stiffness: 300 }} // Задержка для эффекта
           whileHover={{ scale: 1.05 }}
         >
           <Link
@@ -119,7 +118,7 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
             onClick={handleLinkClick}
             className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
-            {t('Contact')}
+            {t("Contact")}
           </Link>
         </motion.div>
         <motion.div
@@ -130,9 +129,6 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
         >
           <LocaleSwitcher />
         </motion.div>
-      </div>
-      <div className="xs:pb-24 md:pb-4">
-        <Networks />
       </div>
     </nav>
   );

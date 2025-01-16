@@ -125,7 +125,7 @@ html {
 }
 @layer utilities {
   .PhotoView-Slider__Backdrop {
-    background: rgba(248, 243, 240, 0.9) !important; /* Змінено фон */
+    background: rgba(248, 243, 240, 0.9) !important;
   }
 
   .PhotoView-Slider__ArrowLeft svg,
