@@ -66,11 +66,13 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
           initial="hidden"
           animate="visible"
           variants={itemVariantsLeft} // Элемент появляется с левой стороны
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: 'spring', stiffness: 300 }}
         >
           <Link
             href="#About"
             onClick={handleLinkClick}
-            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+            className="nav-link p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
             {t('About')}
           </Link>
@@ -79,12 +81,13 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
           initial="hidden"
           animate="visible"
           variants={itemVariantsTop} // Элемент появляется сверху
-          transition={{ delay: 0.2 }} // Задержка для эффекта
+          transition={{ delay: 0.2, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          whileHover={{ scale: 1.05 }}
         >
           <Link
             href="#Collections"
             onClick={handleLinkClick}
-            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
             {t('Collections')}
           </Link>
@@ -93,12 +96,13 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
           initial="hidden"
           animate="visible"
           variants={itemVariants} // Элемент появляется с правой стороны
-          transition={{ delay: 0.4 }} // Задержка для эффекта
+          transition={{ delay: 0.4, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          whileHover={{ scale: 1.05 }}
         >
           <Link
             href="#Services"
             onClick={handleLinkClick}
-            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
             {t('Services')}
           </Link>
@@ -107,12 +111,13 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
           initial="hidden"
           animate="visible"
           variants={itemVariantsLeft} // Элемент появляется с левой стороны
-          transition={{ delay: 0.6 }} // Задержка для эффекта
+          transition={{ delay: 0.6, type: 'spring', stiffness: 300 }} // Задержка для эффекта
+          whileHover={{ scale: 1.05 }}
         >
           <Link
             href="#Contact"
             onClick={handleLinkClick}
-            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+            className="p-2 transition ease-in-out hover:scale-115 duration-400 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text focus-visible:outline-gradientTo focus-visible:gradientTo"
           >
             {t('Contact')}
           </Link>
