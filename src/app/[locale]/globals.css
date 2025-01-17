@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.swiper {
+  padding: 10px !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -123,6 +127,7 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
 @layer utilities {
   .PhotoView-Slider__Backdrop {
     background: rgba(248, 243, 240, 0.9) !important;
@@ -133,6 +138,7 @@ html {
     background: #d4b5a0 !important;
     border-radius: 50% !important;
   }
+
   .PhotoView-Slider__BannerWrap {
     color: #c59f4a !important;
     background-color: rgba(212, 181, 160, 0) !important;

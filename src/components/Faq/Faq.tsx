@@ -37,7 +37,7 @@ const Faq = async () => {
             <Accordion type="single" collapsible>
               {firstColumnItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id}>
-                  <AccordionTrigger className="text-lg font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
+                  <AccordionTrigger className="text-xl font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-lg text-gray-500">
@@ -53,7 +53,7 @@ const Faq = async () => {
             <Accordion type="single" collapsible>
               {secondColumnItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id}>
-                  <AccordionTrigger className="text-lg font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
+                  <AccordionTrigger className="text-xl font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-lg text-gray-500">

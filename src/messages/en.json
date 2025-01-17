@@ -93,5 +93,16 @@
       "question": "Do you offer delivery or pickup?",
       "answer": "Yes, you can choose delivery or pickup at your convenience."
     }
+  },
+  "Feedback": {
+    "title": "Reviews"
+  },
+  "CategoryFilter": {
+    "title": "Filter by Category",
+    "categories": {
+      "wedding": "Wedding",
+      "evening": "Evening",
+      "all": "All"
+    }
   }
 }

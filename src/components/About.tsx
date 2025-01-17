@@ -1,11 +1,11 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 const About = () => {
-  const t = useTranslations("About");
+  const t = useTranslations('About');
 
   // Общие варианты анимации
   const imageVariant = {
@@ -36,7 +36,7 @@ const About = () => {
           animate="visible"
           variants={textVariant}
         >
-          {t("title")}
+          {t('title')}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
           {/* Анимация изображения */}
@@ -67,20 +67,20 @@ const About = () => {
               className="max-md:hidden p-2 text-center xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text font-semibold"
               variants={textVariant}
             >
-              {t("title")}
+              {t('title')}
             </motion.h2>
             <motion.p
               className="mb-[30px] text-justify font-medium"
               variants={textVariant}
             >
-              {t("description")}
+              {t('description')}
             </motion.p>
             <motion.div className="mt-auto" variants={buttonVariant}>
               <Link
-                href="#ContactForm"
+                href="#Contact"
                 className="bg-backgroundButton mx-auto px-6 py-2 font-semibold rounded-lg border border-borderColor hover:bg-buttonHover hover:text-white hover:border-transparent outline-none shadow-md hover:shadow-lg focus:outline-none focus:ring-offset-2 focus:ring-buttonHover transition-all duration-400 "
               >
-                {t("contactLink")}
+                {t('contactLink')}
               </Link>
             </motion.div>
           </motion.div>

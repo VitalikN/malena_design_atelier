@@ -93,5 +93,16 @@
       "question": "Nabízíte doručení nebo osobní vyzvednutí?",
       "answer": "Ano, můžete si zvolit doručení nebo osobní vyzvednutí podle vašeho přání."
     }
+  },
+  "Feedback": {
+    "title": "Recenze"
+  },
+  "CategoryFilter": {
+    "title": "Filtrovat podle kategorie",
+    "categories": {
+      "wedding": "Svatební",
+      "evening": "Večerní",
+      "all": "Všechny"
+    }
   }
 }

@@ -1,40 +1,58 @@
-"use client";
-import { motion } from "framer-motion";
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
-import Image from "next/image";
-import imageData from "../../galleryData.json";
-import { useEffect, useState } from "react";
+'use client';
+import { motion } from 'framer-motion';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+import Image from 'next/image';
+import imageData from '../../galleryData.json';
+import { useEffect, useState } from 'react';
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   PaginationEllipsis,
-} from "@/components/ui/pagination";
-import { useTranslations } from "next-intl";
+} from '@/components/ui/pagination';
+import { useTranslations } from 'next-intl';
+import CategoryFilter from './ui/CategoryFilter/CategoryFilter';
 
 const Collections = () => {
   const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
   const [scrollToTop, setScrollToTop] = useState(false);
-  const t = useTranslations("Collection");
+  const [filteredImages, setFilteredImages] = useState(imageData);
+  const t = useTranslations('Collection');
+
+  const categories = [...new Set(imageData.map((image) => image.category))];
 
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentImages = imageData.slice(startIndex, startIndex + itemsPerPage);
+  const currentImages = filteredImages.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
-  const totalPages = Math.ceil(imageData.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredImages.length / itemsPerPage);
 
   const handlePageClick = (page: number) => {
     setCurrentPage(page);
     setScrollToTop(true);
   };
 
+  const handleCategoryChange = (category: string) => {
+    if (category) {
+      setFilteredImages(
+        imageData.filter((image) => image.category === category)
+      );
+    } else {
+      setFilteredImages(imageData);
+    }
+    setCurrentPage(1);
+  };
+
   useEffect(() => {
     if (scrollToTop) {
-      const collectionsSection = document.getElementById("Collections");
+      const collectionsSection = document.getElementById('Collections');
       if (collectionsSection) {
-        collectionsSection.scrollIntoView({ behavior: "smooth" });
+        collectionsSection.scrollIntoView({ behavior: 'smooth' });
       }
       setScrollToTop(false);
     }
@@ -44,15 +62,19 @@ const Collections = () => {
     <section className="py-10">
       <div
         id="Collections"
-        className=" container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
+        className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2 overflow-x-hidden"
       >
         <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text font-semibold">
-          {t("collectionsTitle")}
+          {t('collectionsTitle')}
         </h2>
+        <CategoryFilter
+          categories={categories}
+          onCategoryChange={handleCategoryChange}
+        />
         <PhotoProvider
           overlayRender={() => <div className="fixed inset-10 "></div>}
         >
-          <ul className="grid grid-cols-1 md:grid-cols-2    xl:grid-cols-4 gap-4  mx-auto">
+          <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4  mx-auto">
             {currentImages.map((image, index) => (
               <motion.li
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
@@ -68,7 +90,6 @@ const Collections = () => {
                     alt={image.alt}
                     width={1200}
                     height={1200}
-                    layout="responsive"
                     className="object-contain mx-auto w-full transform transition-transform ease-in-out duration-500 hover:scale-115"
                   />
                 </PhotoView>
@@ -83,10 +104,10 @@ const Collections = () => {
               <PaginationLink
                 isActive={currentPage === 1}
                 onClick={() => handlePageClick(1)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center  ${
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
                   currentPage === 1
-                    ? "bg-buttonHover text-white"
-                    : "bg-navBg text-gradientFrom"
+                    ? 'bg-buttonHover text-white'
+                    : 'bg-navBg text-gradientFrom'
                 }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
           outline:none duration-400`}
               >
@@ -105,10 +126,10 @@ const Collections = () => {
                   <PaginationLink
                     isActive={page === currentPage}
                     onClick={() => handlePageClick(page)}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                    className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
                       page === currentPage
-                        ? "bg-buttonHover text-white"
-                        : "bg-navBg text-gradientFrom"
+                        ? 'bg-buttonHover text-white'
+                        : 'bg-navBg text-gradientFrom'
                     }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
           outline:none duration-400`}
                   >
@@ -125,12 +146,11 @@ const Collections = () => {
                 <PaginationLink
                   isActive={currentPage === totalPages}
                   onClick={() => handlePageClick(totalPages)}
-                  className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
                     currentPage === totalPages
-                      ? "bg-buttonHover text-white"
-                      : "bg-navBg text-gradientFrom"
-                  }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
-          outline:none duration-400`}
+                      ? 'bg-buttonHover text-white'
+                      : 'bg-navBg text-gradientFrom'
+                  }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent outline:none duration-400`}
                 >
                   {totalPages}
                 </PaginationLink>
