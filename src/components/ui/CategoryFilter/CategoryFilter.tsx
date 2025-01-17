@@ -33,7 +33,7 @@ const CategoryFilter = ({
           <Button
             variant="link"
             aria-label="filter button"
-            className={`cursor-pointer  ${!selectedCategory ? 'text-buttonHover' : 'text-gradientFrom'} font-bold text-xl capitalize transition ease-in-out hover:scale-[1.05] hover:underline duration-400 bg-transparen focus:ring-offset-0 focus-visible:outline-gradientTo`}
+            className={`cursor-pointer py-0 ${!selectedCategory ? 'text-buttonHover' : 'text-gradientFrom'} font-bold text-xl capitalize transition ease-in-out hover:scale-[1.05] hover:underline duration-400 bg-transparen focus:ring-offset-0 focus-visible:outline-gradientTo`}
           >
             {t('categories.all')}
           </Button>
@@ -47,7 +47,7 @@ const CategoryFilter = ({
             <Button
               variant="link"
               aria-label="filter button"
-              className={`cursor-pointer ${selectedCategory === category ? 'text-buttonHover' : 'text-gradientFrom'} font-bold text-xl capitalize transition ease-in-out hover:scale-[1.05] hover:underline duration-400 bg-transparen focus:ring-offset-0 focus-visible:outline-gradientTo`}
+              className={`cursor-pointer py-0 ${selectedCategory === category ? 'text-buttonHover' : 'text-gradientFrom'} font-bold text-xl capitalize transition ease-in-out hover:scale-[1.05] hover:underline duration-400 bg-transparen focus:ring-offset-0 focus-visible:outline-gradientTo`}
             >
               {t(`categories.${category}`)}
             </Button>
