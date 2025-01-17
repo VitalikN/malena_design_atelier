@@ -23,7 +23,7 @@ const Faq = async () => {
       ></div>
 
       <div className="relative z-10 container mx-auto px-4 py-10">
-        <h2 className="p-2 text-center xs:text-26 md:text-30 font-semibold text-gradientTo">
+        <h2 className="p-2 text-center xs:text-26 md:text-30 font-semibold text-gradient">
           {t('title')}
         </h2>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 p-4 rounded-lg overflow-hidden">
@@ -37,7 +37,7 @@ const Faq = async () => {
             <Accordion type="single" collapsible>
               {firstColumnItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id}>
-                  <AccordionTrigger className="text-xl font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
+                  <AccordionTrigger className="text-xl font-medium text-gradient hover:text-buttonHover focus-visible:outline-gradientTo">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-lg text-gray-500">
@@ -53,7 +53,7 @@ const Faq = async () => {
             <Accordion type="single" collapsible>
               {secondColumnItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id}>
-                  <AccordionTrigger className="text-xl font-medium text-gradientTo hover:text-buttonHover focus-visible:outline-gradientTo">
+                  <AccordionTrigger className="text-xl font-medium text-gradient hover:text-buttonHover focus-visible:outline-gradientTo">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-lg text-gray-500">

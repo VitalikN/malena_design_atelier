@@ -3,7 +3,7 @@ const Copyright = () => {
 
   return (
     <div className="bg-navBg py-4 text-center">
-      <p className="text-sm text-gradientTo">
+      <p className="text-sm text-gradient">
         &copy; {currentYear} Malena Design Atelier
       </p>
     </div>

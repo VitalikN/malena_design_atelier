@@ -1,14 +1,14 @@
-"use client";
-import { GrLanguage } from "react-icons/gr";
+'use client';
+import { GrLanguage } from 'react-icons/gr';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "../ui/button";
-import { Locale, usePathname, useRouter } from "@/i18n/routing";
-import { useParams } from "next/navigation";
+} from '@/components/ui/dropdown-menu';
+import { Button } from '../ui/button';
+import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import { useParams } from 'next/navigation';
 
 const LocaleSwitcher = () => {
   const router = useRouter();
@@ -38,7 +38,7 @@ const LocaleSwitcher = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-12 w-20 bg-navBg">
-        <DropdownMenuItem onClick={() => onLocaleChange("en")}>
+        <DropdownMenuItem onClick={() => onLocaleChange('en')}>
           <span
             className=" text-gradientTo cursor-pointer  px-2 py-1.5    w-full   hover:text-white "
             role="img"
@@ -47,7 +47,7 @@ const LocaleSwitcher = () => {
             En
           </span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => onLocaleChange("uk")}>
+        <DropdownMenuItem onClick={() => onLocaleChange('uk')}>
           <span
             className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"
@@ -56,7 +56,7 @@ const LocaleSwitcher = () => {
             Укр
           </span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => onLocaleChange("ru")}>
+        <DropdownMenuItem onClick={() => onLocaleChange('ru')}>
           <span
             className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"
@@ -65,7 +65,7 @@ const LocaleSwitcher = () => {
             Рус
           </span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => onLocaleChange("cs")}>
+        <DropdownMenuItem onClick={() => onLocaleChange('cs')}>
           <span
             className=" text-gradientTo cursor-pointer px-2 py-1.5 w-full hover:text-white "
             role="img"

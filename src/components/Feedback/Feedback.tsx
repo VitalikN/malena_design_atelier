@@ -45,7 +45,7 @@ const Feedback = () => {
 
   return (
     <section className="py-10">
-      <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text font-semibold capitalize">
+      <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-gradient font-semibold capitalize">
         {t('title')}
       </h2>
       <motion.div
