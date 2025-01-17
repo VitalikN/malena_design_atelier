@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Networks = () => {
   return (
-    <div className="flex xs:gap-x-4 md:gap-x-6 justify-center align-items">
+    <div className="flex xs:gap-x-4 md:gap-x-6 justify-center align-items ">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -20,7 +20,7 @@ const Networks = () => {
       >
         <Link
           href="https://www.facebook.com/profile.php?id=61570230000079"
-          className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo"
+          className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
           target="_blank"
           rel="noopener noreferrer"
         >

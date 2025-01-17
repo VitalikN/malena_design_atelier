@@ -46,7 +46,7 @@ const Collections = () => {
         id="Collections"
         className=" container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2"
       >
-        <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text">
+        <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-transparent bg-gradient-to-r from-gradientFrom via-gradientVia to-gradientTo bg-clip-text font-semibold">
           {t("collectionsTitle")}
         </h2>
         <PhotoProvider
@@ -83,7 +83,7 @@ const Collections = () => {
               <PaginationLink
                 isActive={currentPage === 1}
                 onClick={() => handlePageClick(1)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                className={`w-10 h-10 rounded-full flex items-center justify-center  ${
                   currentPage === 1
                     ? "bg-buttonHover text-white"
                     : "bg-navBg text-gradientFrom"

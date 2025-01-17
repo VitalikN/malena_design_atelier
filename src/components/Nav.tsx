@@ -60,7 +60,7 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
 
   return (
     <nav>
-      <div className="mb-auto flex xs:flex-col md:flex-row text-center xs:gap-y-6 md:gap-x-6 justify-center items-center xs:text-20 md:text-20 xl:text-24">
+      <div className="mb-auto flex xs:flex-col md:flex-row text-center xs:gap-y-6 md:gap-x-6 justify-center items-center xs:text-20 md:text-20 xl:text-24 font-semibold">
         <motion.div
           initial="hidden"
           animate="visible"

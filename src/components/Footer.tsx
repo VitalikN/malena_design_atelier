@@ -15,7 +15,7 @@ const Footer = async () => {
         <div>
           <Networks />
 
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-center font-semibold">
             <Link
               href="https://www.google.com/maps?q=Dlouha+17,+Cheb,+Czech+Republic"
               target="_blank"

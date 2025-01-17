@@ -71,7 +71,7 @@ const ContactForm = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="container mx-auto py-12 md:py-16 px-4 relative z-10">
-        <h2 className="text-white text-3xl md:text-4xl text-center font-bold mb-6">
+        <h2 className="text-white text-3xl md:text-4xl text-center  mb-6 font-semibold">
           {t("heading")}
         </h2>
         {/* Анимированная форма */}

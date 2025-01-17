@@ -35,7 +35,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <body
-        className={`${geistSans.variable} ${cormorantGaramond.className} antialiased bg-mainBg text-colorText`}
+        className={`${geistSans.variable} ${cormorantGaramond.className}  antialiased bg-mainBg text-colorText`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
