@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { mulish } from "@/fonts";
+import { cormorantGaramond } from "@/fonts";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -35,7 +35,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <body
-        className={`${geistSans.variable} ${mulish.className} antialiased bg-mainBg text-colorText`}
+        className={`${geistSans.variable} ${cormorantGaramond.className} antialiased bg-mainBg text-colorText`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />

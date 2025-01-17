@@ -1,11 +1,12 @@
-'use client';
-import { useTranslations } from 'next-intl';
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+// import { dancingScript } from "@/fonts";
 
 const Hero = () => {
-  const [dynamicHeight, setDynamicHeight] = useState('80vh');
-  const t = useTranslations('Hero');
+  const [dynamicHeight, setDynamicHeight] = useState("80vh");
+  const t = useTranslations("Hero");
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,8 +34,8 @@ const Hero = () => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -50,18 +51,20 @@ const Hero = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-white xs:text-26 md:text-30 lg:text-40 font-bold pb-[20px]  xs:max-w-[350px] lg:max-w-[400px] "
+              className="text-white xs:text-32 md:text-38 lg:text-40  xl:text-50 font-bold pb-[20px]  xs:max-w-[350px]  md:max-w-[400px] lg:max-w-[500px] xl:ml-[150px]  italic"
             >
-              {t('title')}
+              {t("title")}
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true, amount: 0.3 }}
-              className=" text-white xs:text-22 md:text-26 lg:text-34  font-normal xs:max-w-[350px] lg:max-w-[400px] "
+              className={`" text-white xs:text-26 font-bold md:text-34 lg:text-38  xl:text-46  xs:max-w-[350px] md:max-w-[400px]  lg:max-w-[500px] xl:ml-[150px]   italic "
+                `}
+              //  ${dancingScript.className}
             >
-              {t('subtitle')}
+              {t("subtitle")}
             </motion.h2>
           </div>
         </div>

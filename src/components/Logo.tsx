@@ -14,6 +14,7 @@ const Logo = () => {
           width={400}
           height={400}
           className="object-contain md:mx-auto xs:w-32 md:w-40 xl:w-48 cursor-pointer"
+          priority
         />
       </Link>
     </>

@@ -1,8 +1,8 @@
-import { Merriweather, Mulish } from "next/font/google";
+import { Cormorant_Garamond, Mulish } from "next/font/google";
 
-export const merriweather = Merriweather({
-  weight: ["400", "700"],
-  style: ["normal"],
+export const cormorantGaramond = Cormorant_Garamond({
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
 });
 

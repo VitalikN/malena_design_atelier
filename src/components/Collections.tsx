@@ -68,6 +68,7 @@ const Collections = () => {
                     alt={image.alt}
                     width={1200}
                     height={1200}
+                    layout="responsive"
                     className="object-contain mx-auto w-full transform transition-transform ease-in-out duration-500 hover:scale-115"
                   />
                 </PhotoView>
