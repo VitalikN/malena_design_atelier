@@ -104,9 +104,9 @@ const Collections = () => {
               <PaginationLink
                 isActive={currentPage === 1}
                 onClick={() => handlePageClick(1)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer ${
                   currentPage === 1
-                    ? 'bg-buttonHover text-white'
+                    ? 'bg-buttonHover text-white '
                     : 'bg-navBg text-gradientFrom'
                 }   transition-all hover:scale-110  hover:bg-buttonHover hover:text-white hover:border-transparent
           outline:none duration-400`}
@@ -126,7 +126,7 @@ const Collections = () => {
                   <PaginationLink
                     isActive={page === currentPage}
                     onClick={() => handlePageClick(page)}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
+                    className={`w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer ${
                       page === currentPage
                         ? 'bg-buttonHover text-white'
                         : 'bg-navBg text-gradientFrom'
@@ -146,7 +146,7 @@ const Collections = () => {
                 <PaginationLink
                   isActive={currentPage === totalPages}
                   onClick={() => handlePageClick(totalPages)}
-                  className={`w-10 h-10 rounded-full flex items-center justify-center text-lg ${
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer ${
                     currentPage === totalPages
                       ? 'bg-buttonHover text-white'
                       : 'bg-navBg text-gradientFrom'
