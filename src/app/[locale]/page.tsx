@@ -16,19 +16,19 @@ export async function generateMetadata() {
     description:
       'Discover premium wedding, evening, and casual dresses at Malena Design Atelier. We offer sales, rentals, and tailoring services for all occasions.',
     alternates: {
-      canonical: `${baseUrl}`,
+      canonical: baseUrl,
       languages: {
-        en: 'https://malena-design-atelier.vercel.app/en/',
-        ru: 'https://malena-design-atelier.vercel.app/ru/',
-        uk: 'https://malena-design-atelier.vercel.app/uk/',
-        cs: 'https://malena-design-atelier.vercel.app/cs/',
+        en: `${baseUrl}/en/`,
+        ru: `${baseUrl}/ru/`,
+        uk: `${baseUrl}/uk/`,
+        cs: `${baseUrl}/cs/`,
       },
     },
     openGraph: {
       title: 'Malena Design Atelier - Dresses for Every Occasion',
       description:
         'Discover premium wedding, evening, and casual dresses at Malena Design Atelier. Services include sales, rentals, and tailoring to meet your unique needs.',
-      url: `${baseUrl}`,
+      url: baseUrl,
       images: [
         {
           url: `${baseUrl}/openGraph.JPG`,
