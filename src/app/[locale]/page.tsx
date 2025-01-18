@@ -9,7 +9,7 @@ import Copyright from '@/components/Copyright/Copyright';
 import Feedback from '@/components/Feedback/Feedback';
 
 export async function generateMetadata() {
-  const baseUrl = 'https://malena-design-atelier.vercel.app';
+  const baseUrl = 'https://malena-design-atelier.vercel.app/';
 
   return {
     title: 'Malena Design Atelier - Wedding, Evening, and Casual Dresses',
@@ -18,10 +18,10 @@ export async function generateMetadata() {
     alternates: {
       canonical: `${baseUrl}`,
       languages: {
-        'en-US': `${baseUrl}/en-US/`,
-        'ru-RU': `${baseUrl}/ru-RU/`,
-        'uk-UA': `${baseUrl}/uk-UA/`,
-        'cs-CZ': `${baseUrl}/cs-CZ/`,
+        en: 'https://malena-design-atelier.vercel.app/en/',
+        ru: 'https://malena-design-atelier.vercel.app/ru/',
+        uk: 'https://malena-design-atelier.vercel.app/uk/',
+        cs: 'https://malena-design-atelier.vercel.app/cs/',
       },
     },
     openGraph: {
