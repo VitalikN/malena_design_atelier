@@ -15,7 +15,8 @@ const Header = () => {
   };
   useEffect(() => {
     if (isOpen) {
-      const scrollY = window.scrollY;
+      // const scrollY = window.scrollY;
+      const scrollY = parseInt(document.body.style.top || '0', 10) * -1;
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollY}px`;
       document.body.style.width = '100%';
