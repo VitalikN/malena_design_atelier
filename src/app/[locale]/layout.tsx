@@ -33,6 +33,8 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning={true}>
+      <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+      <link rel="manifest" href="/manifest.json"></link>
       <body
         className={`${geistSans.variable} ${cormorantGaramond.className}  antialiased bg-mainBg text-colorText`}
       >
