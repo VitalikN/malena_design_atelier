@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://malena-design-atelier.vercel.app/sitemap.xml

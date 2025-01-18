@@ -45,7 +45,7 @@ const Feedback = () => {
 
   return (
     <section className="py-10">
-      <h2 className="text-center mb-[15px] xs:text-26 md:text-30 text-gradient font-semibold capitalize">
+      <h2 className="text-center mb-[15px] mobile:text-26 md:text-30 text-gradient font-semibold capitalize">
         {t('title')}
       </h2>
       <motion.div
@@ -66,10 +66,10 @@ const Feedback = () => {
           ref={sliderRef}
           loop
           breakpoints={{
-            900: {
+            1280: {
               slidesPerView: 3,
             },
-            640: {
+            700: {
               slidesPerView: 2,
             },
             320: {
@@ -80,7 +80,7 @@ const Feedback = () => {
           {feedbackList.map((feedback) => (
             <SwiperSlide key={feedback.id}>
               <motion.div
-                className="py-[28px] px-[32px] bg-white shadow rounded-lg"
+                className="mobile:py-[18px] md:py-[28px] mobile:px-[15px] md:px-[32px] bg-white shadow rounded-lg"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

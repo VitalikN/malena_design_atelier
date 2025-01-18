@@ -7,7 +7,7 @@ const Footer = async () => {
   const t = await getTranslations('Contacts');
   return (
     <footer className="bg-mainBg py-8 px-4">
-      <div className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2 text-center sx:justify-center xs:flex xs:flex-col md:flex-row xs:items-center   gap-2  md:justify-around md:items-center ">
+      <div className="container mx-auto mobile:py-2 mobile:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2 text-center mobile:justify-center mobile:flex mobile:flex-col md:flex-row mobile:items-center gap-2 md:justify-around md:items-center ">
         <Logo />
         <div>
           <Networks />

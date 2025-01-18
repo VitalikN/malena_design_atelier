@@ -13,7 +13,8 @@ export default {
   ],
   theme: {
     screens: {
-      xs: '320px',
+      mobile: '320px',
+      xs: '375px',
       sm: '680px',
       md: '768px',
       lg: '1024px',

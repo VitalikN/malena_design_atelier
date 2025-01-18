@@ -26,9 +26,9 @@ const Services = () => {
       viewport={{ once: true, amount: 0.2 }} // Анимация запускается, когда секция попадает в видимость
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto xs:py-2 xs:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2">
+      <div className="container mx-auto mobile:py-4 mobile:px-2 md:px-6 lg:px-8 md:pb-2 lg:pb-2">
         <motion.h2
-          className="p-2 text-center xs:text-26 md:text-30 text-gradient font-semibold"
+          className="p-2 text-center mobile:text-26 md:text-30 text-gradient font-semibold"
           initial={{ y: -50, opacity: 0 }} // Эффект выезда сверху
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -50,49 +50,49 @@ const Services = () => {
           {[
             {
               icon: (
-                <ImScissors className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <ImScissors className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('customTailoring'),
             },
             {
               icon: (
-                <LiaCheckCircle className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <LiaCheckCircle className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('qualityControl'),
             },
             {
               icon: (
-                <TbIroningSteam className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <TbIroningSteam className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('steaming'),
             },
             {
               icon: (
-                <FaRegUser className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <FaRegUser className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('stylistConsultation'),
             },
             {
               icon: (
-                <BiCloset className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <BiCloset className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('weddingStorage'),
             },
             {
               icon: (
-                <GiSewingMachine className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <GiSewingMachine className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('dressAlterations'),
             },
             {
               icon: (
-                <GiSewingNeedle className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <GiSewingNeedle className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('everydayClothing'),
             },
             {
               icon: (
-                <GiAmpleDress className=" m-2 xs:size-10 md:size-12 text-gradientTo mx-auto " />
+                <GiAmpleDress className=" m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto " />
               ),
               text: t('eveningDressRental'),
             },
@@ -104,7 +104,7 @@ const Services = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.2, rotate: 10 }}
-                className="m-2 xs:size-10 md:size-12 text-gradientTo mx-auto"
+                className="m-2 mobile:size-10 md:size-12 text-gradientTo mx-auto"
               >
                 {service.icon}
               </motion.div>

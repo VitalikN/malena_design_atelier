@@ -23,7 +23,7 @@ const Faq = async () => {
       ></div>
 
       <div className="relative z-10 container mx-auto px-4 py-10">
-        <h2 className="p-2 text-center xs:text-26 md:text-30 font-semibold text-gradient">
+        <h2 className="p-2 text-center mobile:text-26 md:text-30 font-semibold text-gradient">
           {t('title')}
         </h2>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 p-4 rounded-lg overflow-hidden">
@@ -33,7 +33,7 @@ const Faq = async () => {
             aria-hidden="true"
           ></div>
           {/* Первая колонка */}
-          <div className="relative  overflow-hidden">
+          <div className="relative overflow-hidden">
             <Accordion type="single" collapsible>
               {firstColumnItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id}>

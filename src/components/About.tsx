@@ -29,9 +29,9 @@ const About = () => {
 
   return (
     <section id="About" className="bg-navBg">
-      <div className="xl:container mx-auto xs:py-4 xs:px-4 md:px-6 xl:px-8 md:py-6 xl:py-8">
+      <div className="container mx-auto mobile:py-4 mobile:px-4 md:px-6 xl:px-8 md:py-6 xl:py-8">
         <motion.h2
-          className="md:hidden p-2 text-center xs:text-26 md:text-30 text-gradient font-semibold"
+          className="md:hidden p-2 text-center mobile:text-26 md:text-30 text-gradient font-semibold"
           initial="hidden"
           animate="visible"
           variants={textVariant}
@@ -64,7 +64,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.h2
-              className="max-md:hidden p-2 text-center xs:text-26 md:text-30 text-gradient font-semibold"
+              className="max-md:hidden p-2 text-center mobile:text-26 md:text-30 text-gradient font-semibold"
               variants={textVariant}
             >
               {t('title')}

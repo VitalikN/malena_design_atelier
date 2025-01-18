@@ -14,8 +14,56 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Malena Design Atelier',
-  description: 'Malena Design Atelier',
+  metadataBase: new URL('https://malena-design-atelier.vercel.app'),
+  title: {
+    default: 'Malena Design Atelier - Wedding, Evening, and Casual Dresses',
+    template: `%s | Malena Design Atelier`,
+  },
+  description:
+    'Malena Design Atelier specializes in the sale, rental, and tailoring of wedding, evening, and casual dresses. High-quality service, personalized approach, and competitive prices.',
+  generator: 'Next.js',
+  applicationName: 'Malena Design Atelier - Dress Rental and Tailoring',
+  referrer: 'origin-when-cross-origin',
+  keywords: [
+    'wedding dresses',
+    'evening dresses',
+    'dress rental',
+    'dress tailoring',
+    'Malena Design Atelier',
+    'Dmitriy Ushkvarok',
+    'Nozhenko Vitalii',
+    'atelier dresses',
+  ],
+  authors: [
+    {
+      name: 'Dmitriy Ushkvarok | Nozhenko Vitalii',
+      url: 'https://www.linkedin.com/in/dmitriy-ushkvarok/',
+    },
+  ],
+  creator: 'Dmitriy Ushkvarok | Nozhenko Vitalii',
+  publisher: 'Malena Design Atelier',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: 'Malena Design Atelier - Dresses for Every Occasion',
+    description:
+      'Discover high-quality wedding, evening, and casual dresses. Services include sales, rentals, and tailoring to suit your needs.',
+    images: [
+      {
+        url: '/openGraph.JPG',
+        width: 400,
+        height: 300,
+      },
+    ],
+    type: 'website',
+    siteName: 'Malena Design Atelier',
+  },
+  verification: {
+    google: 'AOjUnX-0ZVriCXmOY7_0Qkj2Me_F9HO3-IoLSjmde44',
+  },
 };
 
 export default async function RootLayout({

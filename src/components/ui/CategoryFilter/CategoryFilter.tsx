@@ -21,8 +21,8 @@ const CategoryFilter = ({
   };
 
   return (
-    <div className="mb-6 flex items-center xs:justify-center sm:justify-between xs:flex-wrap sm:flex-nowrap">
-      <h3 className="xs:mb-4 sm:mb-0 text-2xl capitalize text-gradient font-semibold">
+    <div className="mb-6 flex items-center mobile:justify-center sm:justify-between mobile:flex-wrap sm:flex-nowrap">
+      <h3 className="mobile:mb-4 sm:mb-0 text-2xl capitalize text-gradient font-semibold">
         {t('title')}
       </h3>
       <ul className="flex gap-4">
