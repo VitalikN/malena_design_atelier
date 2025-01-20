@@ -9,7 +9,7 @@ import Copyright from '@/components/Copyright/Copyright';
 import Feedback from '@/components/Feedback/Feedback';
 
 export async function generateMetadata() {
-  const baseUrl = 'https://malena-design-atelier.vercel.app/';
+  const baseUrl = 'https://www.malena-design-atelier.com';
 
   return {
     title: 'Malena Design Atelier - Wedding, Evening, and Casual Dresses',

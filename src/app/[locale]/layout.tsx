@@ -14,7 +14,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://malena-design-atelier.vercel.app'),
+  metadataBase: new URL('https://www.malena-design-atelier.com'),
   title: {
     default: 'Malena Design Atelier - Wedding, Evening, and Casual Dresses',
     template: `%s | Malena Design Atelier`,

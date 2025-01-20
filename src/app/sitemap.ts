@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://malena-design-atelier.vercel.app/';
+  const baseUrl = 'https://www.malena-design-atelier.com';
 
   return [
     {
