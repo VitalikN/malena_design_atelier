@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: 'Malena Design Atelier',
   },
   verification: {
-    google: 'AOjUnX-0ZVriCXmOY7_0Qkj2Me_F9HO3-IoLSjmde44',
+    google: 'ZqDh3lTOtUl7xlcyu8Dy90bb0Bs24U38GFbhz5V3Z3A',
   },
 };
 
