@@ -64,6 +64,10 @@ export const metadata: Metadata = {
   verification: {
     google: 'ZqDh3lTOtUl7xlcyu8Dy90bb0Bs24U38GFbhz5V3Z3A',
   },
+  icons: {
+    apple: '/apple-icon.png',
+    icon: '/icon.png',
+  },
 };
 
 export default async function RootLayout({
@@ -82,6 +86,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+      <link rel="icon" href="/icon.png" type="image/png" />
       <link rel="manifest" href="/manifest.json"></link>
       <body
         className={`${geistSans.variable} ${cormorantGaramond.className}  antialiased bg-mainBg text-colorText`}
