@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://www.malena-design-atelier.com';
+  const baseUrl = 'https://www.malena-design-atelier.com/';
 
   return [
     {
