@@ -19,7 +19,7 @@ const Networks = () => {
         }}
       >
         <Link
-          href="https://www.facebook.com/profile.php?id=61570230000079"
+          href="https://www.facebook.com/malena.design.atelier/"
           className="p-2 flex  focus-visible:outline-gradientTo focus-visible:gradientTo focus-visible:gradientTo "
           target="_blank"
         >
